@@ -1,0 +1,25 @@
+<section class="concerts_today">
+<h2>Concerts today</h2>  
+  <% if (@concerts_today.size > 0) %>
+    <% @concerts_today.each do |concert| %>
+      <b><%=concert.band%></b> en
+      <%=concert.city%>
+      <%=concert.date.strftime('%d/%m/%Y')%><br>
+    <% end %>
+  <% else %>
+     <p>There arent concerts this month</p>
+  <% end %>
+</section>
+
+<section class="concerts_month">
+  <h2>Concerts this month</h2>
+  <% if (@concerts_rest_of_month.size > 0) %>
+    <% @concerts_rest_of_month.each do |concert| %>
+      <b><%=concert.band%></b> en
+      <%=concert.city%>
+      <%=concert.date.strftime('%d/%m/%Y')%><br>
+    <% end %>
+  <% else %>
+     <p>There arent concerts this month</p>
+  <% end %>
+</section>

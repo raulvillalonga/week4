@@ -1,0 +1,15 @@
+// Place all the styles related to the concerts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.concerts_today{
+  position: relative;
+  float: left;
+  width: 80%;  
+}
+
+.concerts_month{
+  position: relative;
+  float: left;
+  width: 20%;
+}
